@@ -1,0 +1,111 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(251,172,204);
+    background: linear-gradient(90deg, rgba(251,172,204,1) 0%, rgba(249,126,176,1) 68%, rgba(248,117,170,1) 94%);
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 400px;
+}
+.title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FBACCC;
+    border-radius: 20px;
+    padding: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.title-box h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #F4F9F9
+}
+
+.content-box {
+    background-color: #F4F9F9;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.item p {
+    border-bottom: 1px solid;
+    border-color: #F875AA;
+    color: #121212;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.item input:enabled:checked {
+    accent-color: #FBACCC !important;
+    color: white !important;
+}
+
+.input-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-item input {
+    border: none;
+    background-color: #F4F9F9;
+    margin-right: 10px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input-item input:focus {
+    text-decoration: none;
+    outline: none;
+    border-bottom: 1px solid;
+    border-color: #F875AA;
+}
+
+::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.plus-button {
+    border: none;
+    background-color: #FBACCC;
+    color: #606060;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.plus-button:hover {
+    background-color: #F875AA;
+}
