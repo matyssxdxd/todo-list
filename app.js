@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -10,8 +11,11 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+let admin = process.env.ADMIN_NAME;
+let password = process.env.ADMIN_PASSWORD;
+
 try {
-     mongoose.connect("mongodb+srv://admin:Sviests1337@cluster0.amxz712.mongodb.net/todoDB");
+     mongoose.connect("mongodb+srv://" + admin + ":" + password + "@cluster0.amxz712.mongodb.net/todoDB");
 } catch (err) {
     console.error(err);
 };
